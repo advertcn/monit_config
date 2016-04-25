@@ -1,0 +1,8 @@
+## This is an example config for LNMP setup
+check process nginx with pidfile /usr/local/nginx/logs/nginx.pid
+start program = "/etc/init.d/nginx start"
+stop program = "/etc/init.d/nginx stop"
+
+check process mysql with pidfile /usr/local/mysql/var/*.pid
+start program = "/etc/init.d/mysql start"
+stop program = "/etc/init.d/mysql stop"
